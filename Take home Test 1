@@ -127,15 +127,23 @@ Standard Deviation:
 
  int calcStdDev (int A[]  ){
   int sum = 0;
+  sumd = 0;
   double avg = 0;
+  double agds =;
     for (int i = 0; i < size; i++){
         sum + = A [ i ];
         avg = sum / size;
-        
+   }     
    }
    for (int i = 0; i < size; i++){
-   subtract = A [ i ] - avg;
+   subtract = A [ i ] - avg;  
+   sumd = subtract + sumd;
+   avgs = sumb / size
    Square = subtract^2;   
+  ;
+  
+  }
+  return sqrt(avgs);
 }
 
 
