@@ -1,3 +1,5 @@
+Alexia Ducreay
+
 1)
 
 - Write a function that receives 3, 1D arrays.
@@ -38,7 +40,27 @@
  return avg;
  }
  
+ 3)
+ Parameter 4
  
+ void main(int R , int C){
+  for (R = 1; R <= 10; R *=2){  
+  for (C = 1; C <= R; C++){
+  cout << "X";
+  }
+  cout << "\n";
+  }
+  
+  Parameter 6
+  
+  void main(int R , int C){
+  for (R = 1; R <= 40; R *=2){  
+  for (C = 1; C <= R; C++){
+  cout << "X";
+  }
+  cout << "\n";
+  }
+  
  
  4)
 
@@ -118,9 +140,9 @@ Standard Deviation:
 
 
 7)
-Write a function that will dynamically allocated memory of a given size for an integer array.
-Then it will return that new array initialized with zeros.
-Call it initIntArray
+- Write a function that will dynamically allocated memory of a given size for an integer array.
+- Then it will return that new array initialized with zeros.
+- Call it initIntArray
 
 int initIntArray(int A[], int num){
     int num = 0;
