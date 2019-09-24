@@ -1,0 +1,142 @@
+1)
+
+- Write a function that receives 3, 1D arrays.
+ - They are all the same size.
+ - It sums up the values in all arrays and returns that value.
+ - Call your function sumArrays.
+ 
+ 
+ int sumArrays (int A[], int B[], int C[], int size){
+ 
+    int sum = 0;
+    for (int i = 0; i < size; i++){
+        sum + = A [ i ];
+        sum + = B [ i ];
+        sum + = C [ i ];
+       }
+       return sum;
+     } 
+ 
+ 
+2)
+- Write a function that will average integer values in a 2D array.
+ - Assume the 2D array has the same width and height.
+ - Name your function avg2D
+ - Remember averaging integers does not always result in an integer.
+
+ double avg2D (double A[][], int size){
+    
+       avg = 0;
+    For (int i = 0; i < size; i++){
+      For (int j = 0; j < size; j++){
+        sum + = A [ i ] [ j ];
+        
+        avg = sum / size;
+ }
+ }
+ }
+ return avg;
+ }
+ 
+ 
+ 
+ 4)
+
+struct Stats{
+   int min;
+   int max;
+   double avg;
+   int sum;  
+};
+- Write a function that calculates all the values in the Stats struct when given an array of integers.
+- Return your values in an instance of the struct.
+- Name your function aggregateVals
+
+Stats aggregateVals ( double A[], int size){
+
+    Stats S
+    double sum = 0
+    S.min = A [ 0 ];
+    S.max = A [ 0 ];
+    S.avg = 0.0;
+    
+    for (int i = 0; i < size; i++){
+       if (A [ i ] < S.min){
+        S.min = A [ i ];
+    }
+    if (A [ i ] > S.max {
+      S.max = A [ i ];
+    }
+    sum + = A [ i ];
+    }
+    int min = A [ 0 ];
+    if (A [ i ] < min){
+        min = A [ i ];
+    }
+    s.avg = sum/size;
+    return S;
+    }
+    
+    
+5)
+Write a constructor for the Stats struct to initialize its data members with correct values.
+Pay attention to data types.
+
+class Stats{
+public:
+Stats() { 
+int min;
+   int max;
+   double avg;
+   int sum;
+ }
+ };
+ 
+ int main() {
+  Stats myObj;    
+  return 0;
+}
+
+
+6)
+
+Write a function that computes the standard deviation for a 1D array of integers.
+Call your function calcStdDev.
+Standard Deviation:
+- Work out the Mean (the simple average of the numbers)
+- Then for each number: subtract the Mean and square the result
+- Then work out the mean of those squared differences.
+- Take the square root of that and we are done!
+
+ int calcStdDev (int A[]  ){
+  int sum = 0;
+  double avg = 0;
+    for (int i = 0; i < size; i++){
+        sum + = A [ i ];
+        avg = sum / size;
+}
+
+
+7)
+Write a function that will dynamically allocated memory of a given size for an integer array.
+Then it will return that new array initialized with zeros.
+Call it initIntArray
+
+int initIntArray(int A[], int num){
+    int num = 0;
+      Cout << "Enter a number: ";
+      cin >> num;
+      
+      int * array 3 = new int [num];
+      
+      int* initIntArray (int size){
+        int * A = new int [size];
+        
+        return A;
+        }
+        void initIntArray2(int size, int *&A){
+          A = new int [size];
+        }
+
+
+     
