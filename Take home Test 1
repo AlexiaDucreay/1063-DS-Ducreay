@@ -85,17 +85,13 @@ Pay attention to data types.
 class Stats{
 public:
 Stats() { 
-int min;
-   int max;
-   double avg;
-   int sum;
+    max = 0;
+    avg = 0.0;
+   sum = 0;
  }
  };
  
- int main() {
-  Stats myObj;    
-  return 0;
-}
+ 
 
 
 6)
