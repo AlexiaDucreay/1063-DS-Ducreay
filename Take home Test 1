@@ -91,7 +91,6 @@ Stats() {
  }
  };
  
- 
 
 
 6)
@@ -110,6 +109,11 @@ Standard Deviation:
     for (int i = 0; i < size; i++){
         sum + = A [ i ];
         avg = sum / size;
+        
+   }
+   for (int i = 0; i < size; i++){
+   subtract = A [ i ] - avg;
+   Square = subtract^2;   
 }
 
 
